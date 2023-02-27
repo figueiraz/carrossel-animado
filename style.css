@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i.pinimg.com/originals/29/d9/e9/29d9e93e8012110e2b0d50c6b39f732d.jpg);
+    /* background-image: linear-gradient(to bottom, rgb(64, 125, 48), rgb(41, 104, 176), yellow); */
+    background-repeat: no-repeat;
+    font-family: arial;
+    color: rgb(241, 228, 228);
+}
+
+header {
+    margin: 0;
+    background-image: linear-gradient(35deg, rgb(13, 83, 13), rgb(179, 179, 5));
+    padding: 5px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    background-image: linear-gradient(to bottom, black, gray);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 20s infinite forwards linear;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Secular One', sans-serif;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1) {
+    background-image: url(https://images.pexels.com/photos/13911606/pexels-photo-13911606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/1203565/pexels-photo-1203565.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-noronha-1024x576.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://catracalivre.com.br/wp-content/uploads/2018/08/cidades-mais-baratas-viajar-feriado-7-de-setembro.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://letsimage.s3.amazonaws.com/letsbook/211/destinos/5/1.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6) {
+    background-image: url(https://magazine.zarpo.com.br/wp-content/uploads/2021/05/oq-fazer-no-maranhao_zarpo-770x515.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(http://sotaqueando.com.br/wp-content/uploads/2020/01/csm_Pelourinho_66353c4bf9.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://viagemeturismo.abril.com.br/wp-content/uploads/2011/09/GettyImages-697769530.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://omunicipio.com.br/wp-content/uploads/2020/03/parque.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer {
+    background-image: linear-gradient(35deg, rgb(179, 179, 5), rgb(13, 83, 13));
+
+    /* background-color: black; */
+    text-align: center;
+    margin-top: 570px;
+    padding: 10px;
+    font-weight: 600;
+
+}
